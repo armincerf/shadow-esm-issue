@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "npm-run-all": "latest",
+    "shadow-cljs": "latest",
+    "vite": "latest"
+  },
+  "scripts": {
+    "dev-shadow": "shadow-cljs watch app",
+    "dev-vite": "vite",
+    "dev": "run-p dev-shadow dev-vite"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["cljs-src"]
+
+ :dependencies
+ [[re-frame "1.1.2"]
+  [reagent "0.10.0"]]
+
+ :builds
+ {:app
+  {:target :esm
+   :output-dir "shadow-output/js"
+   :asset-path "/js"
+   :modules {:foo {:exports {foo app.core/foo}}}}}}
